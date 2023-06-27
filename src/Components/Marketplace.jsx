@@ -103,9 +103,9 @@ const Marketplace = () => {
                                     </div>
                                 </div>
 
-                                <div className=" text-white relative md:top-32 top-24">
+                                <div className=" text-white relative md:top-32 top-16">
 
-                                    <div className="label text-white pt-6 px-10 text-xl">
+                                    <div className="label text-white pt-6 md:px-10 px-3 md:text-xl text-lg">
                                         <div className="">
                                         With over a billion-dollar market volume, NFT’s are a whole new
 world of possibilities for your art, games, music and IP. Turn your works into one-of-a-kind digital products where you (the creator) control the licensing access securely and transparently across all platforms. Finally an all new realm of opportunities made possible by the most flexible and intuitive free market NFT marketplace solution. 2nd World.

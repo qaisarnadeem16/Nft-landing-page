@@ -7,6 +7,8 @@ import img4 from '../assets/worldmap (6).jpeg'
 import img5 from '../assets/worldmap (5).jpeg'
 import img6 from '../assets/worldmap (6).jpeg'
 import img7 from '../assets/worldmap (7).jpeg'
+import img8 from '../assets/worldmap (8).jpeg'
+import img9 from '../assets/worldmap (9).jpeg'
 
 import { SlArrowLeft, SlArrowRight } from 'react-icons/sl'
 
@@ -16,7 +18,7 @@ function SampleNextArrow(props) {
     const { onClick } = props;
     return (
         <div
-            onClick={onClick} className='block  absolute md:text-[2.5rem] text-[1.3rem] md:text-[#b5d1b3] text-white md:top-28 bottom-10 right-5 md:right-[-4rem] z-10 hover:text-[#004a8b]'>  <SlArrowRight />
+            onClick={onClick} className='block  absolute md:text-[2.5rem] text-[1.3rem] text-[#b5d1b3]  md:top-28 bottom-10 right-5 md:right-[-4rem] z-10 hover:text-[#004a8b]'>  <SlArrowRight />
         </div>
     );
 }
@@ -24,13 +26,13 @@ function SamplePrevArrow(props) {
     const { onClick } = props;
     return (
         <div
-            onClick={onClick} className='block  absolute md:text-[2.5rem] text-[1.3rem] md:text-[#b5d1b3] text-white  md:top-28 bottom-10 left-5 md:left-[-4rem] z-10 hover:text-[#004a8b]'>  <SlArrowLeft />
+            onClick={onClick} className='block  absolute md:text-[2.5rem] text-[1.3rem] text-[#b5d1b3]  md:top-28 bottom-10 left-5 md:left-[-4rem] z-10 hover:text-[#004a8b]'>  <SlArrowLeft />
         </div>
     );
 }
 
 const Worldmap = () => {
-    const [showImage, setShowImage] = useState(img1)
+    const [showImage, setShowImage] = useState(img2)
 
     const handleClick = (event, imageSrc) => {
         setShowImage(imageSrc);
@@ -87,33 +89,31 @@ const Worldmap = () => {
                 <div className="flex md:flex-col flex-col-reverse ">
                     <div className="container flex flex-col md:flex-row  ">
                     <div className="carousel w-[50%] md:block hidden   ">
-                            <img src={showImage} alt="" className="w-full h-[600px]" />
+                            <img src={showImage} alt="" className="w-full h-[500px]" />
 
                         </div>
 
-                        <div className="md:w-[50%]  bg-[#004a8b] relative " >
+                        <div className="md:w-[50%]  bg-[#004a8b] relative" >
 
-                            <div className="flex justify-center">
+                            <div className="flex justify-center ">
                                 <div className="w-[200px] bg-[#b5d1b3] absolute top-0  p-5">
-                                    <div className="text-[12px] text-xl text-bold  text-white  text-center ">
+                                    <div className=" text-2xl font-bold  text-white  text-center ">
                                         <span className=""> World map</span>
                                     </div>
                                 </div>
 
 
-                                <div className=" text-white relative top-16 pb-5">
+                                <div className=" text-white relative md:top-36 top-10 pb-10 ">
 
-                                    <div className="label text-white pt-6 md:px-10 px-5 text-lg">
-                                        <div className="py-2">
-                                        In today's fast-paced, technology-driven world, it's becoming increasingly important to find ways to seamlessly integrate the physical and digital experiences. Fortunately, with the rise of virtual reality and other cutting-edge technologies, it's now easier than ever to create a truly immersive and engaging user experience.
+                                    <div className="label text-white pt-6 md:px-10 px-5 text-lg ">
+                                      
+
+                                        <div className="py-4 text-xl font-bold text-center">
+                                        Your Personal Space in the Metaverse
                                         </div>
 
-                                        <div className="py-2">
-                                        Whether you're running a business, developing a game, or simply trying to connect with others in a meaningful way, combining physical and digital elements can help you achieve your goals. By adding a virtual presence to your existing physical space, you can create a totally new and unique experience that will captivate and engage your audience.
-                                        </div>
-
-                                        <div className="py-2">
-                                        So if you're looking to take your physical and digital experiences to the next level, don't be afraid to explore the many exciting possibilities that exist on the cutting edge of technology. With a little creativity and a lot of determination, you can create something truly remarkable that will delight and inspire your audience for years to come. So what are you waiting for? The future is waiting, and it's never been more exciting!
+                                        <div className="py-2 text-center">
+                                        With just a 2ndworld NAME you can claim your own corner of the metaverse, separate from the open world of 2ndworld, where you can build, experiment, host events—whatever you want, it’s your World
                                         </div>
                                     </div>
 
@@ -153,6 +153,14 @@ const Worldmap = () => {
 
                             <div className="w-[19%] overflow-hidden  md:pl-5 focus:outline-none" onClick={(event) => handleClick(event, img7)}>
                                 <img src={img7} alt="" width='100%' />
+                            </div>
+
+                            <div className="w-[19%] overflow-hidden  md:pl-5 focus:outline-none" onClick={(event) => handleClick(event, img8)}>
+                                <img src={img8} alt="" width='100%' />
+                            </div>
+
+                            <div className="w-[19%] overflow-hidden  md:pl-5 focus:outline-none" onClick={(event) => handleClick(event, img9)}>
+                                <img src={img9} alt="" width='100%' />
                             </div>
 
 
