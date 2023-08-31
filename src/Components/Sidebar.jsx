@@ -16,7 +16,7 @@ const Sidebar = () => {
                     } md:translate-x-0 md:w-50 md:static md:block`}
             >
                 {/* Sidebar content */}
-                <nav className="flex flex-col items-center py-5 gap-2 font-bold">
+                <nav className="flex flex-col items-center py-5 gap-2 font-bold bg-white">
 
                     <a className="px-6 py-2 text-gray-600 hover:bg-gray-200  rounded-md" href="/">
                         <h1 className="text-blue-500 text-xl font-bold">Logo</h1>
